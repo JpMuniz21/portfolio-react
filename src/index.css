@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+    background-color: #282a36; 
+}
+
+header h1 {
+    color: #f1fa8c; 
+    transition: 0.3s;
+    font-size: 3rem; 
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    background: linear-gradient(90deg, #f1fa8c, #50fa7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header h1:hover {
+    filter: drop-shadow(0 0 8px rgba(80, 250, 123, 0.6));
+    transform: scale(1.01);
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.typing-nome {
+    color: #f1fa8c;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #f1fa8c, #50fa7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.typing-sub {
+    color: #6272a4;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin: 0 auto;
+    /* width: 0 e overflow removidos para o texto aparecer de primeira! */
+}
+
+.subtitulo {
+    color: #6272a4; 
+    font-size: 1.1rem;
+    margin-top: 5px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+body {
+    font-size: 18px; 
+    background: radial-gradient(circle at center, #282a36 0%, #1a1b24 100%);
+    background-color: #282a36;
+    color: #f8f8f2;
+    line-height: 1.7;
+}
+
+nav {
+    margin-top: 25px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #bd93f9;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+    margin: 0 15px; 
+    opacity: 1;
+}
+
+nav a:hover {
+    color: #50fa7b;
+    border-bottom: 2px solid #50fa7b;
+}
+
+h2 {
+    color: #50fa7b; 
+    margin-bottom: 20px;
+}
+
+#conhecimentos ul {
+    list-style-type: "λ "; 
+    padding-left: 20px;
+    color: #ff79c6; 
+}
+
+#conhecimentos li {
+    margin-bottom: 10px;
+    color: #f8f8f2;
+    font-size: 1.15rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    background-color: rgba(68, 71, 90, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    color: #f8f8f2;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #6272a4; 
+    padding: 15px; 
+    text-align: left;
+}
+
+table th {
+    background-color: rgba(189, 147, 249, 0.9);
+    color: #282a36;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    
+table tr:nth-child(even) {
+    background-color: #383a59; 
+}
+
+table tbody tr:hover {
+    background-color: #44475a;
+    color: #50fa7b;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover td:first-child {
+    border-left: 4px solid #50fa7b;
+}
+
+#contatos {
+    text-align: center;
+    padding: 60px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #44475a; 
+}
+
+.links-contato {
+    margin-top: 25px;
+}
+
+.links-contato a {
+    color: #bd93f9;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.links-contato a:hover {
+    color: #50fa7b;
+    border-bottom: 2px solid #50fa7b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6272a4;
+    font-size: 0.8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- ESTRUTURA RECONFIGURADA PARA REACT --- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    position: relative !important;
+    padding: 40px 0 !important;
+    scroll-margin-top: 150px;
+}
+
+/* Garante o recuo milimétrico abaixo da Navbar fixa */
+#sobre {
+    padding-top: 220px !important; 
+}
